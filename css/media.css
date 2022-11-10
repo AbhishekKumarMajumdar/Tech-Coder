@@ -50,3 +50,56 @@
         
     }
 }
+
+@media(max-width:600px) {
+    .logo{
+       text-align:center;
+       font-size:1rem;
+    }
+       nav ul {
+           display: none;
+       }
+       .main-box h2{
+       font-size:1rem;
+       word-spacing: 0;
+       }
+       .main-box p{
+           font-size:0.8rem;
+           letter-spacing: 0;
+       }
+       .icon i{
+           font-size: 0.5rem;
+           margin-right: 1rem;
+       }
+       .btn{
+           width: 5rem;
+           height: 2rem;
+           border-radius: 5px;
+           font-size: 1rem;
+       }
+       .main-box{
+           margin-top:18vh;
+   
+       }
+       .dron{
+           height: 3rem;
+           top: 5rem;
+       }
+       .Astro{
+           height: 6rem;
+           left: 0rem;
+           top: 15rem;
+       }
+       @keyframes Astro {
+           0%{top:15rem;}
+           50%{top:14rem;}
+           100%{top: 15rem;}
+           
+       }
+       @keyframes dron {
+           0%{top:7rem;}
+           50%{top:5rem;}
+           100%{top: 7rem;}
+           
+       }
+   }
