@@ -1,0 +1,208 @@
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                                                     Import Font Link
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap');
+
+
+
+
+
+
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                                                     Root
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+:root{
+    --bg:red;
+    --black:#0d1117;
+    --blue:rgb(80, 126, 252);
+}
+
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                                                     Commen
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow-x:hidden;
+}
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                                                     Commen
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    width: 7rem;height: 3rem;
+    border:none;
+    background: var(--blue);
+    color:#fff;
+    font-size: 1.5rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+
+    /* Google Fonts Here */
+    /* font-family: 'Crimson Text', serif; */
+}
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                                                     Main
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+main{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #0d1117; */
+    background: url(../image/try.png)no-repeat center center/cover;
+    background-position-x:30%;
+    overflow: hidden;
+}
+
+
+nav{
+    height: 5rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.logo{
+    margin-left: 5rem;
+    font-size: 2rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    word-spacing: 0.7rem;
+    letter-spacing: 0.5rem;
+    color: #fff;
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 2px 0 #bbb,
+    0 2px 0 #b9b9b9,
+    0 2px 0 #aaa,
+    0 2px 1px rgba(0,0,0,.1),
+    0 0 3px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+nav ul {
+    height: 3rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    gap: 2rem;
+    margin-right: 5rem;
+}
+nav ul li a {
+    font-size: 1.2rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.main-box{
+    margin-top:30vh;
+    margin-left:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    position: relative;
+}
+.main-box h2{
+    font-size: 3.2rem;
+    color:#fff;
+    text-transform: uppercase;
+    word-spacing: 0.7rem;
+    letter-spacing:0.3rem;
+    margin-bottom: 0.7rem;
+    font-family: 'Space Grotesk', sans-serif;
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 2px 0 #bbb,
+    0 2px 0 #b9b9b9,
+    0 2px 0 #aaa,
+    0 2px 1px rgba(0,0,0,.1),
+    0 0 3px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+
+}
+.main-box p{
+    font-size: 1.5rem;
+    color:#fff;
+    text-transform: uppercase;
+    letter-spacing:0.3rem;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-bottom: 1rem;
+}
+.main-box .icon{
+    color: #fff;
+}
+.icon i{
+    margin-right: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.dron{
+height: 6rem;
+position: absolute;
+top:9rem;left:13rem;
+transform: rotate(-15deg);
+transition: all 0.5s linear;
+animation: dron 10s linear infinite;
+}
+.Astro{
+    height: 22rem;
+position: absolute;
+top:9rem;left:66rem;
+animation: Astro 10s linear infinite;
+transition: all 0.5s linear;
+
+}
+@keyframes Astro {
+    0%{top:10rem;}
+    50%{top:9rem;}
+    100%{top: 10rem;}
+    
+}
+@keyframes dron {
+    0%{top:13rem;}
+    50%{top:9rem;}
+    100%{top: 13rem;}
+    
+}
+
+
+
+
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                                                     footer
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1rem 3.5rem;
+    margin-top: 3rem;
+  }
+  
