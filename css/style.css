@@ -15,6 +15,8 @@
     --bg:red;
     --black:#0d1117;
     --blue:rgb(80, 126, 252);
+    --white:#fff;
+    --adadad:#adadad;
 }
 
 /*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
@@ -24,15 +26,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 html{
     overflow-x:hidden;
     scroll-behavior: smooth;
 }
 body{
-    position: relative;
-
+    background: var(--black);
 }
 /*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
                                                      Commen
@@ -61,6 +61,42 @@ a{
     /* Google Fonts Here */
     /* font-family: 'Crimson Text', serif; */
 }
+section{
+    /* padding: 0 5rem; */
+    margin: 0;
+}
+.grid{
+    display: grid;
+}
+.grid-two-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heading{
+    text-align: center;
+    color:var(--white);
+    /* margin: 1rem 0; */
+    padding: 1rem 0;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size:3rem;
+    background: url(../image/footer-galaxy.webp)no-repeat center;
+
+
+}
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                                                     JS Class
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+.try{
+    transition: all 1s linear;
+    animation: try 1s linear 250ms;
+}
+@keyframes try {
+    0%{height: 0rem;}
+
+     100%{height: 18rem;}
+     
+ }
 /*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
                                                      Main
 *=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
@@ -202,8 +238,55 @@ transition: all 0.5s linear;
 }
 
 
-section{
-    background-color: #0d1117;
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                                                     Serviecs
+*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+.services{
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    gap: 1.2rem;
+    position: relative;
+    background: url(../image/footer-galaxy.webp)no-repeat center center/cover;
+    background-attachment:fixed;
+    padding:0 5rem;
+}
+.line{
+    width: 3px;
+    background: linear-gradient(#56d364, #2ea043, #0d1117); 
+    height: 18rem;
+    border-radius:2px;
+}
+.s-line{
+    background:linear-gradient(#0d1117, #ec6547, #ec6547, #fff);
+}
+.t-line{
+    background: linear-gradient(#fff, #d2a8ff, #a371f7 ,var(--black));
+}
+.i-laptop{
+    font-size: 2rem;
+    color:var(--white);
+    box-shadow: 0px 0px 50px 4px #56d364;
+    background: transparent;
+
+}
+.web{
+    /* position: absolute; */
+    top: 18rem;left:0rem;
+    font-size: 3rem;
+    color:#56d364;
+    display:flex;
+    align-items:center;
+    font-family: 'Space Grotesk', sans-serif;
+    flex-direction: column;
+}
+.web p{
+    font-size: 1rem;
+    color:var(--white);
+    margin-top: 0.5rem;
+
 }
 
 /*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
