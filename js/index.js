@@ -1,3 +1,8 @@
+const loader = document.querySelector(".loader");
+window.addEventListener("load", function(){
+    loader.style.display="none"
+});
+
 const text = document.querySelector("#text");
 const text1 = document.querySelector("#text1");
 const Astro = document.querySelector("#Astro");
