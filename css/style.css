@@ -118,7 +118,7 @@ main{
     width: 100vw;
     height: 100vh;
     /* background-color: #0d1117; */
-    background: url(../image/try.png)no-repeat center center/cover;
+    background: url(../image/try-min.png)no-repeat center center/cover;
     background-position-x:30%;
     overflow: hidden;
 }
