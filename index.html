@@ -9,12 +9,12 @@
 <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
 <link rel="manifest" href="image/site.webmanifest">
-<script defer src="js/index.js" async="true"></script>
+<script defer src="js/index-min.js" async="true"></script>
     <!--/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
                                         Link file
      *=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/-->
      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/style-min.css">
      <link rel="stylesheet" href="css/media.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -26,12 +26,12 @@
             <nav id="nav" class="">
                 <div class="logo">Tech Coder</div>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Project</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#team">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#letast">Project</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
 
                 </ul>
             </nav>
@@ -45,10 +45,14 @@
             <h2 id="text">We are Tech coder</h2>
             <p id="text1">you Thing , we code</p>
             <div class="icon">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-github"></i>
+                <a href=""><i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href=""><i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href=""><i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://github.com/abhi112chiku"><i class="fa-brands fa-github"></i>
+                </a>
             </div>
             <div class="btn">Hire Us</div>
         </div>
@@ -58,7 +62,7 @@
 
         </picture>
     </main>
-<section>
+<section id="services">
     <div class="heading">
         Our Services
     </div>
@@ -129,7 +133,7 @@
         </div>
     </div>
 </section>
-<section class="letast">
+<section class="letast" id="letast">
     <div class="heading" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
         letast project
     </div>
@@ -147,7 +151,7 @@
         team
     </div>
     <div class="teamMember grid grid-two-col">
-        <div class="teaml" ><img data-aos="zoom-out-right" data-aos-duration="1000" loading="lazy" src="image/yogita.png" alt=""></div>
+        <div class="teaml" ><img data-aos="zoom-out-right" data-aos-duration="1000" src="image/abhi-min.png" alt=""></div>
         <div class="teamr">
             <h2 data-aos="zoom-in-left" data-aos-duration="1000">Abhishek Kumar
             </h2>
@@ -160,11 +164,11 @@
             <p data-aos="zoom-in-right" data-aos-duration="1500">Yogita is young girl who is pasionate about Data Science. Yogita has a good command in MongoDB and Backend Technologies. Pesonally She wants to go for Data Science but she is also interested to learn trending Technologies.            </p>
         </div>
         
-        <div class="teaml" ><img data-aos="zoom-out-left" data-aos-duration="1000" loading="lazy" src="image/yogita.png" alt=""></div>
+        <div class="teaml" ><img data-aos="zoom-out-left" data-aos-duration="1000"  src="image/yogita-min.png" alt=""></div>
         
     </div>
     <div class="teamMember grid grid-two-col">
-        <div class="teaml" ><img data-aos="zoom-out-right" data-aos-duration="1000" loading="lazy" src="image/yogita.png" alt=""></div>
+        <div class="teaml" ><img data-aos="zoom-out-right" data-aos-duration="1000"  src="image/yogita-min.png" alt=""></div>
         <div class="teamr">
             <h2 data-aos="zoom-in-left" data-aos-duration="1000">Suraj Chandra            </h2>
             <p data-aos="zoom-in-left" data-aos-duration="1500">Suraj is basically a noob player in this team who often works as UI and Graphis Designer but he wants to learn Full Stack Technologies. Suraj is not commited to his career and often chooses a path which may have a bright future ahead waiting for him.
@@ -173,7 +177,7 @@
         </div>
     </div>
 </section>
-<section>
+<section id="contact">
     <div class="heading" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
         Contact Us
     </div>
